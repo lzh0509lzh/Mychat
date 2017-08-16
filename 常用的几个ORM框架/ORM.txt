@@ -1,0 +1,17 @@
+常用的几个ORM框架：
+
+EF（ADO.NET Entity Framework）：微软基于ADO.NET开发的ORM框架。
+
+Nhibernate：面向.NET环境的轻量级的ORM框架。
+
+SqlMapper.cs：用于小项目的通用的C#数据库访问类。
+
+AutoMapper：流行的对象映射框架，可减少大量硬编码，很小巧灵活，性能表现也可接受。
+
+SubSonic：优秀的开源的ORM映射框架，同时提供符合自身需要的代码生成器。
+
+FluentData：开源的基于Fluent API的链式查询ORM轻量级框架。
+
+Dapper：轻量级高性能基于EMIT生成的ORM框架。
+
+EmitMapper：性能较高的ORM框架，运行时通过EMIT动态生成IL代码，并非采用反射机制。
