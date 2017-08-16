@@ -1,0 +1,1235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GameDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.Actor”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="Actor">
+    <Key>
+      <PropertyRef Name="UsreID" />
+      <PropertyRef Name="ActorName" />
+      <PropertyRef Name="Sex" />
+      <PropertyRef Name="CampID" />
+      <PropertyRef Name="FaceID" />
+      <PropertyRef Name="HairStyle" />
+      <PropertyRef Name="ScenceID" />
+      <PropertyRef Name="AppearRes" />
+      <PropertyRef Name="OtherAppearRes" />
+      <PropertyRef Name="CreateIp" />
+      <PropertyRef Name="ServerName" />
+      <PropertyRef Name="ExploitLevel" />
+      <PropertyRef Name="CurMapID" />
+      <PropertyRef Name="BackMapID" />
+      <PropertyRef Name="Flag" />
+      <PropertyRef Name="CreateTime" />
+      <PropertyRef Name="ActorID" />
+      <PropertyRef Name="LoginType" />
+      <PropertyRef Name="IP" />
+    </Key>
+    <Property Name="UsreID" Type="int" Nullable="false" />
+    <Property Name="ActorName" Type="varchar" MaxLength="18" Nullable="false" />
+    <Property Name="Sex" Type="tinyint" Nullable="false" />
+    <Property Name="CampID" Type="tinyint" Nullable="false" />
+    <Property Name="FaceID" Type="tinyint" Nullable="false" />
+    <Property Name="HairStyle" Type="tinyint" Nullable="false" />
+    <Property Name="ScenceID" Type="tinyint" Nullable="false" />
+    <Property Name="AppearRes" Type="binary" MaxLength="88" Nullable="false" />
+    <Property Name="OtherAppearRes" Type="binary" MaxLength="16" Nullable="false" />
+    <Property Name="CreateIp" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="ServerName" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="ExploitLevel" Type="tinyint" Nullable="false" />
+    <Property Name="CurMapID" Type="smallint" Nullable="false" />
+    <Property Name="BackMapID" Type="smallint" Nullable="false" />
+    <Property Name="Flag" Type="int" Nullable="false" />
+    <Property Name="CurMapLocX" Type="smallint" />
+    <Property Name="ClanID" Type="int" />
+    <Property Name="CurMapLocY" Type="smallint" />
+    <Property Name="Macaddr" Type="varchar" MaxLength="20" />
+    <Property Name="BackMapLocX" Type="smallint" />
+    <Property Name="BackMapLocY" Type="smallint" />
+    <Property Name="HoldMoney" Type="int" />
+    <Property Name="WareMoney" Type="int" />
+    <Property Name="HomeMoney" Type="int" />
+    <Property Name="CurHP" Type="smallint" />
+    <Property Name="CurPW" Type="smallint" />
+    <Property Name="CurJE" Type="smallint" />
+    <Property Name="ExploitAll" Type="int" />
+    <Property Name="BattSkill" Type="binary" MaxLength="308" />
+    <Property Name="LiveSkill" Type="binary" MaxLength="410" />
+    <Property Name="Status" Type="binary" MaxLength="148" />
+    <Property Name="ColdTime" Type="binary" MaxLength="84" />
+    <Property Name="ShortCut" Type="binary" MaxLength="138" />
+    <Property Name="BagsBuffer" Type="binary" MaxLength="14" />
+    <Property Name="ClanBuffer" Type="binary" MaxLength="120" />
+    <Property Name="CheckBuffer" Type="binary" MaxLength="8" />
+    <Property Name="PetBuffer" Type="binary" MaxLength="250" />
+    <Property Name="BagGoodsBuffer" Type="binary" MaxLength="388" />
+    <Property Name="VehicalBuffer" Type="binary" MaxLength="210" />
+    <Property Name="KeyPropBuffer" Type="binary" MaxLength="60" />
+    <Property Name="Config" Type="int" />
+    <Property Name="GMpurview" Type="int" />
+    <Property Name="HaveNewEmailFlag" Type="tinyint" />
+    <Property Name="Point" Type="int" />
+    <Property Name="LandNum" Type="tinyint" />
+    <Property Name="BattlePower" Type="int" />
+    <Property Name="ShoppingMoney" Type="int" />
+    <Property Name="CreateTime" Type="datetime" Nullable="false" />
+    <Property Name="PayFlag" Type="int" />
+    <Property Name="RankBuff" Type="binary" MaxLength="60" />
+    <Property Name="ActorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LoginType" Type="tinyint" Nullable="false" />
+    <Property Name="IP" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="ReserveBuff" Type="binary" MaxLength="128" />
+    <Property Name="LastTime" Type="datetime" />
+    <Property Name="LevelTime" Type="datetime" />
+    <Property Name="SetTing" Type="int" />
+    <Property Name="ActorInfo" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.ActorRank”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="ActorRank">
+    <Key>
+      <PropertyRef Name="ActorID" />
+      <PropertyRef Name="RankType" />
+      <PropertyRef Name="TopValue" />
+      <PropertyRef Name="StatDate" />
+      <PropertyRef Name="CampID" />
+      <PropertyRef Name="ExpLevel" />
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="ActorName" />
+      <PropertyRef Name="ActiveValue" />
+      <PropertyRef Name="RankSerial" />
+      <PropertyRef Name="RankValue" />
+      <PropertyRef Name="DynamicValue1" />
+      <PropertyRef Name="DynamicValue2" />
+      <PropertyRef Name="DynamicValue3" />
+      <PropertyRef Name="DynamicText" />
+    </Key>
+    <Property Name="ActorID" Type="int" Nullable="false" />
+    <Property Name="RankType" Type="tinyint" Nullable="false" />
+    <Property Name="TopValue" Type="int" Nullable="false" />
+    <Property Name="StatDate" Type="datetime" Nullable="false" />
+    <Property Name="CampID" Type="tinyint" Nullable="false" />
+    <Property Name="ExpLevel" Type="int" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="ActorName" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="ActiveValue" Type="int" Nullable="false" />
+    <Property Name="RankSerial" Type="int" Nullable="false" />
+    <Property Name="RankValue" Type="int" Nullable="false" />
+    <Property Name="DynamicValue1" Type="int" Nullable="false" />
+    <Property Name="DynamicValue2" Type="int" Nullable="false" />
+    <Property Name="DynamicValue3" Type="int" Nullable="false" />
+    <Property Name="DynamicText" Type="varchar" MaxLength="64" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.BattleTeam”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="BattleTeam">
+    <Key>
+      <PropertyRef Name="BattleTeamID" />
+      <PropertyRef Name="MasterID" />
+      <PropertyRef Name="BattleTeamName" />
+      <PropertyRef Name="Flag" />
+      <PropertyRef Name="Points" />
+      <PropertyRef Name="PushCastleNum" />
+      <PropertyRef Name="KillEnemeyNum" />
+    </Key>
+    <Property Name="BattleTeamID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MasterID" Type="int" Nullable="false" />
+    <Property Name="BattleTeamName" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="Flag" Type="tinyint" Nullable="false" />
+    <Property Name="Points" Type="int" Nullable="false" />
+    <Property Name="PushCastleNum" Type="int" Nullable="false" />
+    <Property Name="KillEnemeyNum" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.BattleTeam_Member”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="BattleTeam_Member">
+    <Key>
+      <PropertyRef Name="ActorID" />
+      <PropertyRef Name="BattleTeamID" />
+    </Key>
+    <Property Name="ActorID" Type="int" Nullable="false" />
+    <Property Name="BattleTeamID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.BattleTeamPKLog”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="BattleTeamPKLog">
+    <Key>
+      <PropertyRef Name="RedTeam_ID" />
+      <PropertyRef Name="BlueTeam_ID" />
+      <PropertyRef Name="PushCastleNum_Red" />
+      <PropertyRef Name="KillEnemeyNum_Red" />
+      <PropertyRef Name="PushCastleNum_Blue" />
+      <PropertyRef Name="KillEnemeyNum_Blue" />
+      <PropertyRef Name="WinTeamID" />
+    </Key>
+    <Property Name="RedTeam_ID" Type="int" Nullable="false" />
+    <Property Name="BlueTeam_ID" Type="int" Nullable="false" />
+    <Property Name="PushCastleNum_Red" Type="int" Nullable="false" />
+    <Property Name="KillEnemeyNum_Red" Type="int" Nullable="false" />
+    <Property Name="PushCastleNum_Blue" Type="int" Nullable="false" />
+    <Property Name="KillEnemeyNum_Blue" Type="int" Nullable="false" />
+    <Property Name="WinTeamID" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.BourseInfo”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="BourseInfo">
+    <Key>
+      <PropertyRef Name="ActorID" />
+      <PropertyRef Name="BuyOrSell" />
+      <PropertyRef Name="GoodsID" />
+      <PropertyRef Name="GoodsName" />
+      <PropertyRef Name="SinglePrice" />
+      <PropertyRef Name="GoodsNum" />
+      <PropertyRef Name="ExpriceHour" />
+      <PropertyRef Name="IP" />
+      <PropertyRef Name="StartTime" />
+      <PropertyRef Name="Rid" />
+      <PropertyRef Name="LeftNum" />
+      <PropertyRef Name="ExpireTime" />
+    </Key>
+    <Property Name="ActorID" Type="int" Nullable="false" />
+    <Property Name="BuyOrSell" Type="tinyint" Nullable="false" />
+    <Property Name="GoodsID" Type="int" Nullable="false" />
+    <Property Name="GoodsName" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="SinglePrice" Type="int" Nullable="false" />
+    <Property Name="GoodsNum" Type="smallint" Nullable="false" />
+    <Property Name="ExpriceHour" Type="tinyint" Nullable="false" />
+    <Property Name="IP" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="StartTime" Type="int" Nullable="false" />
+    <Property Name="Rid" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="LeftNum" Type="int" Nullable="false" />
+    <Property Name="ExpireTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.BrotherHood”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="BrotherHood">
+    <Key>
+      <PropertyRef Name="BrotherHoodName" />
+      <PropertyRef Name="BrotherHoodScore" />
+      <PropertyRef Name="BrotherHoodLevel" />
+      <PropertyRef Name="MasterID" />
+      <PropertyRef Name="BrotherHoodId" />
+    </Key>
+    <Property Name="BrotherHoodName" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="BrotherHoodScore" Type="int" Nullable="false" />
+    <Property Name="BrotherHoodLevel" Type="int" Nullable="false" />
+    <Property Name="MasterID" Type="int" Nullable="false" />
+    <Property Name="BrotherHoodId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.BrotherHood_Member”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="BrotherHood_Member">
+    <Key>
+      <PropertyRef Name="ActorID" />
+      <PropertyRef Name="BrotherHoodID" />
+      <PropertyRef Name="NickName" />
+      <PropertyRef Name="Rights" />
+      <PropertyRef Name="FriendValue" />
+    </Key>
+    <Property Name="ActorID" Type="int" Nullable="false" />
+    <Property Name="BrotherHoodID" Type="int" Nullable="false" />
+    <Property Name="NickName" Type="varchar" MaxLength="10" Nullable="false" />
+    <Property Name="Rights" Type="tinyint" Nullable="false" />
+    <Property Name="FriendValue" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.CDKeyCode_Award”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="CDKeyCode_Award">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="ActorID" />
+      <PropertyRef Name="ActorLevel" />
+      <PropertyRef Name="ServerName" />
+      <PropertyRef Name="CDKeyType" />
+      <PropertyRef Name="CDKeyCode" />
+      <PropertyRef Name="IsUsed" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="ActorID" Type="int" Nullable="false" />
+    <Property Name="ActorLevel" Type="int" Nullable="false" />
+    <Property Name="ServerName" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="CDKeyType" Type="int" Nullable="false" />
+    <Property Name="CDKeyCode" Type="varchar" MaxLength="16" Nullable="false" />
+    <Property Name="IsUsed" Type="int" Nullable="false" />
+    <Property Name="Ip" Type="varchar" MaxLength="32" />
+    <Property Name="Mac" Type="varchar" MaxLength="32" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.Clan”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="Clan">
+    <Key>
+      <PropertyRef Name="ClanName" />
+      <PropertyRef Name="ClanServerID" />
+      <PropertyRef Name="ClanActorID" />
+      <PropertyRef Name="ClanIcon" />
+      <PropertyRef Name="ClanParentID" />
+      <PropertyRef Name="ClanTime" />
+      <PropertyRef Name="Popularity" />
+      <PropertyRef Name="WeekActivity" />
+      <PropertyRef Name="ClanID" />
+    </Key>
+    <Property Name="ClanName" Type="varchar" MaxLength="18" Nullable="false" />
+    <Property Name="ClanServerID" Type="tinyint" Nullable="false" />
+    <Property Name="ClanActorID" Type="int" Nullable="false" />
+    <Property Name="ClanIcon" Type="tinyint" Nullable="false" />
+    <Property Name="ClanParentID" Type="int" Nullable="false" />
+    <Property Name="ClanTime" Type="int" Nullable="false" />
+    <Property Name="Popularity" Type="int" Nullable="false" />
+    <Property Name="WeekActivity" Type="int" Nullable="false" />
+    <Property Name="DelSource" Type="varchar" MaxLength="128" />
+    <Property Name="ClanDesc" Type="varchar" MaxLength="400" />
+    <Property Name="ClanMoney" Type="int" />
+    <Property Name="ClanExp" Type="int" />
+    <Property Name="ClanLevel" Type="tinyint" />
+    <Property Name="ClanTech" Type="tinyint" />
+    <Property Name="ClanTech2" Type="tinyint" />
+    <Property Name="ClanTech3" Type="tinyint" />
+    <Property Name="ClanTechBuffer" Type="binary" MaxLength="300" />
+    <Property Name="SkillMaxNum" Type="tinyint" />
+    <Property Name="SkillVelocity" Type="smallint" />
+    <Property Name="SkillExpend" Type="tinyint" />
+    <Property Name="CampID" Type="tinyint" />
+    <Property Name="SeignioryBuffer" Type="binary" MaxLength="246" />
+    <Property Name="OfflineTime" Type="int" />
+    <Property Name="AllyConIDFst" Type="int" />
+    <Property Name="AllyConIDSec" Type="int" />
+    <Property Name="ClanActorName" Type="varchar" MaxLength="18" />
+    <Property Name="ClanSparePerson" Type="tinyint" />
+    <Property Name="ClanSpareNum" Type="tinyint" />
+    <Property Name="ClanPaySparePerson" Type="tinyint" />
+    <Property Name="ClanPaySpareNum" Type="tinyint" />
+    <Property Name="ClanID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.ClanActor”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="ClanActor">
+    <Key>
+      <PropertyRef Name="ClanID" />
+      <PropertyRef Name="ActorID" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ClanID" Type="int" Nullable="false" />
+    <Property Name="ActorID" Type="int" Nullable="false" />
+    <Property Name="ContributeNum" Type="int" />
+    <Property Name="ActiveNum" Type="int" />
+    <Property Name="PositonID" Type="int" />
+    <Property Name="NickID" Type="int" />
+    <Property Name="TopClanID" Type="int" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.ClanActor_Apply”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="ClanActor_Apply">
+    <Key>
+      <PropertyRef Name="ClanID" />
+      <PropertyRef Name="ActorID" />
+      <PropertyRef Name="ApplyTime" />
+      <PropertyRef Name="ExploitLevel" />
+      <PropertyRef Name="Activity" />
+    </Key>
+    <Property Name="ClanID" Type="int" Nullable="false" />
+    <Property Name="ActorID" Type="int" Nullable="false" />
+    <Property Name="ApplyTime" Type="int" Nullable="false" />
+    <Property Name="ExploitLevel" Type="tinyint" Nullable="false" />
+    <Property Name="Activity" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.ClanBattleInfo”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="ClanBattleInfo">
+    <Key>
+      <PropertyRef Name="BattleStartClanID" />
+      <PropertyRef Name="BattleEndClanID" />
+      <PropertyRef Name="BattleStartTime" />
+      <PropertyRef Name="KillEnemeyNum" />
+      <PropertyRef Name="KilledNum" />
+      <PropertyRef Name="ChalllengeScore" />
+      <PropertyRef Name="AcceptedScore" />
+      <PropertyRef Name="BattleResult" />
+      <PropertyRef Name="BattleID" />
+    </Key>
+    <Property Name="BattleStartClanID" Type="int" Nullable="false" />
+    <Property Name="BattleEndClanID" Type="int" Nullable="false" />
+    <Property Name="BattleStartTime" Type="int" Nullable="false" />
+    <Property Name="KillEnemeyNum" Type="int" Nullable="false" />
+    <Property Name="KilledNum" Type="int" Nullable="false" />
+    <Property Name="ChalllengeScore" Type="int" Nullable="false" />
+    <Property Name="AcceptedScore" Type="int" Nullable="false" />
+    <Property Name="BattleResult" Type="tinyint" Nullable="false" />
+    <Property Name="BattleID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BattleEndTime" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.ClanConsortia”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="ClanConsortia">
+    <Key>
+      <PropertyRef Name="ClanID" />
+      <PropertyRef Name="PositionID" />
+      <PropertyRef Name="Permission" />
+    </Key>
+    <Property Name="ClanID" Type="int" Nullable="false" />
+    <Property Name="PositionID" Type="int" Nullable="false" />
+    <Property Name="Permission" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.ClanNick”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="ClanNick">
+    <Key>
+      <PropertyRef Name="ClanID" />
+      <PropertyRef Name="NickID" />
+      <PropertyRef Name="NickName" />
+    </Key>
+    <Property Name="ClanID" Type="int" Nullable="false" />
+    <Property Name="NickID" Type="int" Nullable="false" />
+    <Property Name="NickName" Type="varchar" MaxLength="16" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“GameDB.dbo.ClanRelation”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="ClanRelation">
+          <Property Name="ID" Type="uniqueidentifier" />
+          <Property Name="ClanID" Type="int" />
+          <Property Name="RelationClanID" Type="int" />
+          <Property Name="Time" Type="datetime" />
+        </EntityType>-->
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.GameActor_Event_Log”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="GameActor_Event_Log">
+    <Key>
+      <PropertyRef Name="ActorID" />
+      <PropertyRef Name="EventType" />
+      <PropertyRef Name="LogCount" />
+      <PropertyRef Name="LogBufData" />
+    </Key>
+    <Property Name="ActorID" Type="int" Nullable="false" />
+    <Property Name="EventType" Type="tinyint" Nullable="false" />
+    <Property Name="LogCount" Type="tinyint" Nullable="false" />
+    <Property Name="LogBufData" Type="binary" MaxLength="1560" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.GameActor_Master”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="GameActor_Master">
+    <Key>
+      <PropertyRef Name="ActorID" />
+      <PropertyRef Name="RelationID" />
+      <PropertyRef Name="DismissFlag" />
+      <PropertyRef Name="Contribution" />
+      <PropertyRef Name="DismissTime" />
+      <PropertyRef Name="Type" />
+    </Key>
+    <Property Name="ActorID" Type="int" Nullable="false" />
+    <Property Name="RelationID" Type="int" Nullable="false" />
+    <Property Name="DismissFlag" Type="tinyint" Nullable="false" />
+    <Property Name="Contribution" Type="int" Nullable="false" />
+    <Property Name="DismissTime" Type="int" Nullable="false" />
+    <Property Name="Type" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.GameActor_MasterReg”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="GameActor_MasterReg">
+    <Key>
+      <PropertyRef Name="ActorID" />
+      <PropertyRef Name="RegMasterTime" />
+      <PropertyRef Name="MasterDeclar" />
+    </Key>
+    <Property Name="ActorID" Type="int" Nullable="false" />
+    <Property Name="RegMasterTime" Type="int" Nullable="false" />
+    <Property Name="MasterDeclar" Type="varchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.GameActor_Nick”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="GameActor_Nick">
+    <Key>
+      <PropertyRef Name="ActorID" />
+      <PropertyRef Name="CurNickID" />
+      <PropertyRef Name="OwnedNum" />
+      <PropertyRef Name="KnownNum" />
+      <PropertyRef Name="BufData" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ActorID" Type="int" Nullable="false" />
+    <Property Name="CurNickID" Type="int" Nullable="false" />
+    <Property Name="OwnedNum" Type="int" Nullable="false" />
+    <Property Name="KnownNum" Type="int" Nullable="false" />
+    <Property Name="BufData" Type="binary" MaxLength="1400" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.GameActorOffMsg”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="GameActorOffMsg">
+    <Key>
+      <PropertyRef Name="ActorID" />
+      <PropertyRef Name="RelationID" />
+      <PropertyRef Name="Message" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ActorID" Type="int" Nullable="false" />
+    <Property Name="RelationID" Type="int" Nullable="false" />
+    <Property Name="Message" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.GameEmail”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="GameEmail">
+    <Key>
+      <PropertyRef Name="FromActorID" />
+      <PropertyRef Name="ToActorName" />
+      <PropertyRef Name="EmailTitle" />
+      <PropertyRef Name="EmailBody" />
+      <PropertyRef Name="WriteTime" />
+      <PropertyRef Name="EmailID" />
+      <PropertyRef Name="Status" />
+      <PropertyRef Name="GoodsIcodID" />
+    </Key>
+    <Property Name="FromActorID" Type="int" Nullable="false" />
+    <Property Name="ToActorName" Type="varchar" MaxLength="18" Nullable="false" />
+    <Property Name="EmailTitle" Type="varchar" MaxLength="32" Nullable="false" />
+    <Property Name="EmailBody" Type="varchar" MaxLength="600" Nullable="false" />
+    <Property Name="MoneyNum" Type="int" />
+    <Property Name="AttachNum" Type="tinyint" />
+    <Property Name="GoodsBuf" Type="binary" MaxLength="525" />
+    <Property Name="WriteTime" Type="datetime" Nullable="false" />
+    <Property Name="EmailID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Status" Type="tinyint" Nullable="false" />
+    <Property Name="GoodsIcodID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.GameMapGround”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="GameMapGround">
+    <Key>
+      <PropertyRef Name="MapID" />
+      <PropertyRef Name="UseGroundNum" />
+    </Key>
+    <Property Name="MapID" Type="int" Nullable="false" />
+    <Property Name="UseGroundNum" Type="tinyint" Nullable="false" />
+    <Property Name="UseGroundBuffer" Type="binary" MaxLength="3800" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“GameDB.dbo.GameMapScopes”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="GameMapScopes">
+          <Property Name="ID" Type="uniqueidentifier" />
+          <Property Name="MapID" Type="smallint" />
+          <Property Name="UseScopesNum" Type="tinyint" />
+          <Property Name="UseScopesBuffer" Type="varbinary" MaxLength="3800" />
+          <Property Name="Time" Type="datetime" />
+        </EntityType>-->
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.GameRank”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="GameRank">
+    <Key>
+      <PropertyRef Name="RankType" />
+      <PropertyRef Name="RankKey" />
+      <PropertyRef Name="RankIndex" />
+      <PropertyRef Name="DynamicValue1" />
+      <PropertyRef Name="DynamicValue2" />
+      <PropertyRef Name="DynamicValue3" />
+      <PropertyRef Name="DynamicValue4" />
+      <PropertyRef Name="AttachInfo" />
+      <PropertyRef Name="Time" />
+      <PropertyRef Name="BufData" />
+      <PropertyRef Name="Nums" />
+    </Key>
+    <Property Name="RankType" Type="tinyint" Nullable="false" />
+    <Property Name="RankKey" Type="int" Nullable="false" />
+    <Property Name="RankIndex" Type="smallint" Nullable="false" />
+    <Property Name="DynamicValue1" Type="int" Nullable="false" />
+    <Property Name="DynamicValue2" Type="int" Nullable="false" />
+    <Property Name="DynamicValue3" Type="int" Nullable="false" />
+    <Property Name="DynamicValue4" Type="int" Nullable="false" />
+    <Property Name="AttachInfo" Type="varchar" MaxLength="128" Nullable="false" />
+    <Property Name="Time" Type="datetime" Nullable="false" />
+    <Property Name="BufData" Type="varbinary" MaxLength="3900" Nullable="false" />
+    <Property Name="Nums" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6013: 表/视图“GameDB.dbo.GameUser_QQPay”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="GameUser_QQPay">
+          <Property Name="UserID" Type="int" />
+          <Property Name="ActorID" Type="int" />
+          <Property Name="QQ" Type="int" />
+          <Property Name="Detuct" Type="int" />
+          <Property Name="Balance" Type="int" />
+          <Property Name="Index" Type="varchar" MaxLength="40" />
+          <Property Name="IP" Type="varchar" MaxLength="16" />
+          <Property Name="Desc" Type="varchar" MaxLength="64" />
+          <Property Name="BalancePointNums" Type="int" />
+        </EntityType>-->
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.Goods”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="Goods">
+    <Key>
+      <PropertyRef Name="ContainerID" />
+      <PropertyRef Name="ActorID" />
+      <PropertyRef Name="GoodsBuf" />
+      <PropertyRef Name="GoodsNum" />
+    </Key>
+    <Property Name="ContainerID" Type="tinyint" Nullable="false" />
+    <Property Name="ActorID" Type="int" Nullable="false" />
+    <Property Name="GoodsBuf" Type="binary" MaxLength="3888" Nullable="false" />
+    <Property Name="GoodsNum" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.Goods_Auction”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="Goods_Auction">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="SellActorID" />
+      <PropertyRef Name="SellGoodsID" />
+      <PropertyRef Name="SellBaseMoney" />
+      <PropertyRef Name="RebootMode" />
+      <PropertyRef Name="PayMode" />
+      <PropertyRef Name="SellMode" />
+      <PropertyRef Name="BuyLowestLevel" />
+      <PropertyRef Name="RiseMinRange" />
+      <PropertyRef Name="GoodsBuffer" />
+      <PropertyRef Name="SellLeftTime" />
+      <PropertyRef Name="ItemName" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="SellActorID" Type="int" Nullable="false" />
+    <Property Name="SellGoodsID" Type="int" Nullable="false" />
+    <Property Name="SellBaseMoney" Type="int" Nullable="false" />
+    <Property Name="RebootMode" Type="tinyint" Nullable="false" />
+    <Property Name="PayMode" Type="tinyint" Nullable="false" />
+    <Property Name="SellMode" Type="tinyint" Nullable="false" />
+    <Property Name="BuyLowestLevel" Type="smallint" Nullable="false" />
+    <Property Name="RiseMinRange" Type="smallint" Nullable="false" />
+    <Property Name="GoodsBuffer" Type="varbinary" MaxLength="97" Nullable="false" />
+    <Property Name="SellLeftTime" Type="datetime" Nullable="false" />
+    <Property Name="ItemName" Type="varbinary" MaxLength="16" Nullable="false" />
+    <Property Name="LastBuyerActorID" Type="int" />
+    <Property Name="LastBuyerPayment" Type="int" />
+    <Property Name="LastBuyerServerID" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.Goods_Trade”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="Goods_Trade">
+    <Key>
+      <PropertyRef Name="ServerID" />
+      <PropertyRef Name="ActorID" />
+      <PropertyRef Name="GoodsID" />
+      <PropertyRef Name="Price" />
+      <PropertyRef Name="ItemName" />
+      <PropertyRef Name="AddTime" />
+      <PropertyRef Name="ExpireHour" />
+      <PropertyRef Name="GoodsBuffer" />
+      <PropertyRef Name="Rid" />
+    </Key>
+    <Property Name="ServerID" Type="tinyint" Nullable="false" />
+    <Property Name="ActorID" Type="int" Nullable="false" />
+    <Property Name="GoodsID" Type="int" Nullable="false" />
+    <Property Name="Price" Type="int" Nullable="false" />
+    <Property Name="ItemName" Type="binary" MaxLength="16" Nullable="false" />
+    <Property Name="AddTime" Type="datetime" Nullable="false" />
+    <Property Name="ExpireHour" Type="tinyint" Nullable="false" />
+    <Property Name="GoodsBuffer" Type="binary" MaxLength="97" Nullable="false" />
+    <Property Name="Rid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.GoodsClinchDetail”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="GoodsClinchDetail">
+    <Key>
+      <PropertyRef Name="Time" />
+      <PropertyRef Name="GoodsID" />
+      <PropertyRef Name="Price" />
+      <PropertyRef Name="num" />
+    </Key>
+    <Property Name="Time" Type="datetime" Nullable="false" />
+    <Property Name="GoodsID" Type="int" Nullable="false" />
+    <Property Name="Price" Type="int" Nullable="false" />
+    <Property Name="num" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.GoodsClinchInfo”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="GoodsClinchInfo">
+    <Key>
+      <PropertyRef Name="GoodsID" />
+      <PropertyRef Name="LastTradePrice" />
+      <PropertyRef Name="DayAvagePrice" />
+      <PropertyRef Name="NumFlag" />
+    </Key>
+    <Property Name="GoodsID" Type="int" Nullable="false" />
+    <Property Name="LastTradePrice" Type="int" Nullable="false" />
+    <Property Name="DayAvagePrice" Type="int" Nullable="false" />
+    <Property Name="NumFlag" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.House”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="House">
+    <Key>
+      <PropertyRef Name="HouseKey" />
+      <PropertyRef Name="ActorID" />
+      <PropertyRef Name="HouseID" />
+    </Key>
+    <Property Name="EntryID" Type="smallint" />
+    <Property Name="DynamicID" Type="smallint" />
+    <Property Name="HouseKey" Type="smallint" Nullable="false" />
+    <Property Name="StatusKey" Type="smallint" />
+    <Property Name="ActorID" Type="int" Nullable="false" />
+    <Property Name="HouseName" Type="varchar" MaxLength="32" />
+    <Property Name="HouseLevel" Type="smallint" />
+    <Property Name="HouseBuff" Type="binary" MaxLength="3584" />
+    <Property Name="Integral" Type="int" />
+    <Property Name="LastVisit" Type="int" />
+    <Property Name="ParkKey" Type="int" />
+    <Property Name="HouseID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DataLen" Type="int" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.HouseEntry”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="HouseEntry">
+    <Key>
+      <PropertyRef Name="EntryID" />
+      <PropertyRef Name="ServerID" />
+      <PropertyRef Name="HouseID" />
+      <PropertyRef Name="OwnerActorID" />
+      <PropertyRef Name="StartDate" />
+      <PropertyRef Name="ValidDays" />
+      <PropertyRef Name="DelayFlag" />
+      <PropertyRef Name="IsUsed" />
+      <PropertyRef Name="DoorSerialID" />
+      <PropertyRef Name="AttachSvrID" />
+    </Key>
+    <Property Name="EntryID" Type="smallint" Nullable="false" />
+    <Property Name="ServerID" Type="smallint" Nullable="false" />
+    <Property Name="HouseID" Type="int" Nullable="false" />
+    <Property Name="OwnerActorID" Type="int" Nullable="false" />
+    <Property Name="StartDate" Type="datetime" Nullable="false" />
+    <Property Name="ValidDays" Type="int" Nullable="false" />
+    <Property Name="DelayFlag" Type="tinyint" Nullable="false" />
+    <Property Name="IsUsed" Type="tinyint" Nullable="false" />
+    <Property Name="DoorSerialID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AttachSvrID" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.Interact”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="Interact">
+    <Key>
+      <PropertyRef Name="TypeID" />
+      <PropertyRef Name="ServerID" />
+      <PropertyRef Name="OwnerID" />
+      <PropertyRef Name="DataBuffer" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="TypeID" Type="tinyint" Nullable="false" />
+    <Property Name="ServerID" Type="tinyint" Nullable="false" />
+    <Property Name="OwnerID" Type="int" Nullable="false" />
+    <Property Name="DataBuffer" Type="binary" MaxLength="3600" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.NickInfo”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="NickInfo">
+    <Key>
+      <PropertyRef Name="NickID" />
+      <PropertyRef Name="OwnedActorNum" />
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="NickID" Type="int" Nullable="false" />
+    <Property Name="OwnedActorNum" Type="int" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.Relation”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="Relation">
+    <Key>
+      <PropertyRef Name="ActorID" />
+      <PropertyRef Name="SetTing" />
+      <PropertyRef Name="ActorInfo" />
+      <PropertyRef Name="FavorDegree" />
+      <PropertyRef Name="Fate" />
+      <PropertyRef Name="RelationID" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="MapID" />
+      <PropertyRef Name="Reservel" />
+      <PropertyRef Name="CurTime" />
+    </Key>
+    <Property Name="ActorID" Type="int" Nullable="false" />
+    <Property Name="SetTing" Type="int" Nullable="false" />
+    <Property Name="ActorInfo" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="FavorDegree" Type="smallint" Nullable="false" />
+    <Property Name="Fate" Type="tinyint" Nullable="false" />
+    <Property Name="RelationID" Type="int" Nullable="false" />
+    <Property Name="Type" Type="tinyint" Nullable="false" />
+    <Property Name="MapID" Type="smallint" Nullable="false" />
+    <Property Name="Reservel" Type="tinyint" Nullable="false" />
+    <Property Name="CurTime" Type="int" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.Relation_OffMsg”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="Relation_OffMsg">
+    <Key>
+      <PropertyRef Name="ActorID" />
+      <PropertyRef Name="RelationID" />
+      <PropertyRef Name="MsgType" />
+    </Key>
+    <Property Name="ActorID" Type="int" Nullable="false" />
+    <Property Name="RelationID" Type="int" Nullable="false" />
+    <Property Name="MsgType" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <!--生成过程中发现错误:
+警告 6002: 表/视图“GameDB.dbo.ResControl”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
+  <EntityType Name="ResControl">
+    <Key>
+      <PropertyRef Name="ID" />
+      <PropertyRef Name="Type" />
+      <PropertyRef Name="DataBuffer" />
+    </Key>
+    <Property Name="ID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Type" Type="int" Nullable="false" />
+    <Property Name="DataBuffer" Type="binary" MaxLength="340" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="GameDBModelStoreContainer">
+    <EntitySet Name="Actor" EntityType="Self.Actor" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Actor].[UsreID] AS [UsreID], 
+    [Actor].[ActorName] AS [ActorName], 
+    [Actor].[Sex] AS [Sex], 
+    [Actor].[CampID] AS [CampID], 
+    [Actor].[FaceID] AS [FaceID], 
+    [Actor].[HairStyle] AS [HairStyle], 
+    [Actor].[ScenceID] AS [ScenceID], 
+    [Actor].[AppearRes] AS [AppearRes], 
+    [Actor].[OtherAppearRes] AS [OtherAppearRes], 
+    [Actor].[CreateIp] AS [CreateIp], 
+    [Actor].[ServerName] AS [ServerName], 
+    [Actor].[ExploitLevel] AS [ExploitLevel], 
+    [Actor].[CurMapID] AS [CurMapID], 
+    [Actor].[BackMapID] AS [BackMapID], 
+    [Actor].[Flag] AS [Flag], 
+    [Actor].[CurMapLocX] AS [CurMapLocX], 
+    [Actor].[ClanID] AS [ClanID], 
+    [Actor].[CurMapLocY] AS [CurMapLocY], 
+    [Actor].[Macaddr] AS [Macaddr], 
+    [Actor].[BackMapLocX] AS [BackMapLocX], 
+    [Actor].[BackMapLocY] AS [BackMapLocY], 
+    [Actor].[HoldMoney] AS [HoldMoney], 
+    [Actor].[WareMoney] AS [WareMoney], 
+    [Actor].[HomeMoney] AS [HomeMoney], 
+    [Actor].[CurHP] AS [CurHP], 
+    [Actor].[CurPW] AS [CurPW], 
+    [Actor].[CurJE] AS [CurJE], 
+    [Actor].[ExploitAll] AS [ExploitAll], 
+    [Actor].[BattSkill] AS [BattSkill], 
+    [Actor].[LiveSkill] AS [LiveSkill], 
+    [Actor].[Status] AS [Status], 
+    [Actor].[ColdTime] AS [ColdTime], 
+    [Actor].[ShortCut] AS [ShortCut], 
+    [Actor].[BagsBuffer] AS [BagsBuffer], 
+    [Actor].[ClanBuffer] AS [ClanBuffer], 
+    [Actor].[CheckBuffer] AS [CheckBuffer], 
+    [Actor].[PetBuffer] AS [PetBuffer], 
+    [Actor].[BagGoodsBuffer] AS [BagGoodsBuffer], 
+    [Actor].[VehicalBuffer] AS [VehicalBuffer], 
+    [Actor].[KeyPropBuffer] AS [KeyPropBuffer], 
+    [Actor].[Config] AS [Config], 
+    [Actor].[GMpurview] AS [GMpurview], 
+    [Actor].[HaveNewEmailFlag] AS [HaveNewEmailFlag], 
+    [Actor].[Point] AS [Point], 
+    [Actor].[LandNum] AS [LandNum], 
+    [Actor].[BattlePower] AS [BattlePower], 
+    [Actor].[ShoppingMoney] AS [ShoppingMoney], 
+    [Actor].[CreateTime] AS [CreateTime], 
+    [Actor].[PayFlag] AS [PayFlag], 
+    [Actor].[RankBuff] AS [RankBuff], 
+    [Actor].[ActorID] AS [ActorID], 
+    [Actor].[LoginType] AS [LoginType], 
+    [Actor].[IP] AS [IP], 
+    [Actor].[ReserveBuff] AS [ReserveBuff], 
+    [Actor].[LastTime] AS [LastTime], 
+    [Actor].[LevelTime] AS [LevelTime], 
+    [Actor].[SetTing] AS [SetTing], 
+    [Actor].[ActorInfo] AS [ActorInfo]
+    FROM [dbo].[Actor] AS [Actor]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ActorRank" EntityType="Self.ActorRank" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ActorRank].[ActorID] AS [ActorID], 
+    [ActorRank].[RankType] AS [RankType], 
+    [ActorRank].[TopValue] AS [TopValue], 
+    [ActorRank].[StatDate] AS [StatDate], 
+    [ActorRank].[CampID] AS [CampID], 
+    [ActorRank].[ExpLevel] AS [ExpLevel], 
+    [ActorRank].[UserID] AS [UserID], 
+    [ActorRank].[ActorName] AS [ActorName], 
+    [ActorRank].[ActiveValue] AS [ActiveValue], 
+    [ActorRank].[RankSerial] AS [RankSerial], 
+    [ActorRank].[RankValue] AS [RankValue], 
+    [ActorRank].[DynamicValue1] AS [DynamicValue1], 
+    [ActorRank].[DynamicValue2] AS [DynamicValue2], 
+    [ActorRank].[DynamicValue3] AS [DynamicValue3], 
+    [ActorRank].[DynamicText] AS [DynamicText]
+    FROM [dbo].[ActorRank] AS [ActorRank]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="BattleTeam" EntityType="Self.BattleTeam" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [BattleTeam].[BattleTeamID] AS [BattleTeamID], 
+    [BattleTeam].[MasterID] AS [MasterID], 
+    [BattleTeam].[BattleTeamName] AS [BattleTeamName], 
+    [BattleTeam].[Flag] AS [Flag], 
+    [BattleTeam].[Points] AS [Points], 
+    [BattleTeam].[PushCastleNum] AS [PushCastleNum], 
+    [BattleTeam].[KillEnemeyNum] AS [KillEnemeyNum]
+    FROM [dbo].[BattleTeam] AS [BattleTeam]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="BattleTeam_Member" EntityType="Self.BattleTeam_Member" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [BattleTeam_Member].[ActorID] AS [ActorID], 
+    [BattleTeam_Member].[BattleTeamID] AS [BattleTeamID]
+    FROM [dbo].[BattleTeam_Member] AS [BattleTeam_Member]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="BattleTeamPKLog" EntityType="Self.BattleTeamPKLog" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [BattleTeamPKLog].[RedTeam_ID] AS [RedTeam_ID], 
+    [BattleTeamPKLog].[BlueTeam_ID] AS [BlueTeam_ID], 
+    [BattleTeamPKLog].[PushCastleNum_Red] AS [PushCastleNum_Red], 
+    [BattleTeamPKLog].[KillEnemeyNum_Red] AS [KillEnemeyNum_Red], 
+    [BattleTeamPKLog].[PushCastleNum_Blue] AS [PushCastleNum_Blue], 
+    [BattleTeamPKLog].[KillEnemeyNum_Blue] AS [KillEnemeyNum_Blue], 
+    [BattleTeamPKLog].[WinTeamID] AS [WinTeamID]
+    FROM [dbo].[BattleTeamPKLog] AS [BattleTeamPKLog]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="BourseInfo" EntityType="Self.BourseInfo" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [BourseInfo].[ActorID] AS [ActorID], 
+    [BourseInfo].[BuyOrSell] AS [BuyOrSell], 
+    [BourseInfo].[GoodsID] AS [GoodsID], 
+    [BourseInfo].[GoodsName] AS [GoodsName], 
+    [BourseInfo].[SinglePrice] AS [SinglePrice], 
+    [BourseInfo].[GoodsNum] AS [GoodsNum], 
+    [BourseInfo].[ExpriceHour] AS [ExpriceHour], 
+    [BourseInfo].[IP] AS [IP], 
+    [BourseInfo].[StartTime] AS [StartTime], 
+    [BourseInfo].[Rid] AS [Rid], 
+    [BourseInfo].[LeftNum] AS [LeftNum], 
+    [BourseInfo].[ExpireTime] AS [ExpireTime]
+    FROM [dbo].[BourseInfo] AS [BourseInfo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="BrotherHood" EntityType="Self.BrotherHood" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [BrotherHood].[BrotherHoodName] AS [BrotherHoodName], 
+    [BrotherHood].[BrotherHoodScore] AS [BrotherHoodScore], 
+    [BrotherHood].[BrotherHoodLevel] AS [BrotherHoodLevel], 
+    [BrotherHood].[MasterID] AS [MasterID], 
+    [BrotherHood].[BrotherHoodId] AS [BrotherHoodId]
+    FROM [dbo].[BrotherHood] AS [BrotherHood]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="BrotherHood_Member" EntityType="Self.BrotherHood_Member" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [BrotherHood_Member].[ActorID] AS [ActorID], 
+    [BrotherHood_Member].[BrotherHoodID] AS [BrotherHoodID], 
+    [BrotherHood_Member].[NickName] AS [NickName], 
+    [BrotherHood_Member].[Rights] AS [Rights], 
+    [BrotherHood_Member].[FriendValue] AS [FriendValue]
+    FROM [dbo].[BrotherHood_Member] AS [BrotherHood_Member]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="CDKeyCode_Award" EntityType="Self.CDKeyCode_Award" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [CDKeyCode_Award].[ID] AS [ID], 
+    [CDKeyCode_Award].[UserID] AS [UserID], 
+    [CDKeyCode_Award].[ActorID] AS [ActorID], 
+    [CDKeyCode_Award].[ActorLevel] AS [ActorLevel], 
+    [CDKeyCode_Award].[ServerName] AS [ServerName], 
+    [CDKeyCode_Award].[CDKeyType] AS [CDKeyType], 
+    [CDKeyCode_Award].[CDKeyCode] AS [CDKeyCode], 
+    [CDKeyCode_Award].[IsUsed] AS [IsUsed], 
+    [CDKeyCode_Award].[Ip] AS [Ip], 
+    [CDKeyCode_Award].[Mac] AS [Mac]
+    FROM [dbo].[CDKeyCode_Award] AS [CDKeyCode_Award]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Clan" EntityType="Self.Clan" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Clan].[ClanName] AS [ClanName], 
+    [Clan].[ClanServerID] AS [ClanServerID], 
+    [Clan].[ClanActorID] AS [ClanActorID], 
+    [Clan].[ClanIcon] AS [ClanIcon], 
+    [Clan].[ClanParentID] AS [ClanParentID], 
+    [Clan].[ClanTime] AS [ClanTime], 
+    [Clan].[Popularity] AS [Popularity], 
+    [Clan].[WeekActivity] AS [WeekActivity], 
+    [Clan].[DelSource] AS [DelSource], 
+    [Clan].[ClanDesc] AS [ClanDesc], 
+    [Clan].[ClanMoney] AS [ClanMoney], 
+    [Clan].[ClanExp] AS [ClanExp], 
+    [Clan].[ClanLevel] AS [ClanLevel], 
+    [Clan].[ClanTech] AS [ClanTech], 
+    [Clan].[ClanTech2] AS [ClanTech2], 
+    [Clan].[ClanTech3] AS [ClanTech3], 
+    [Clan].[ClanTechBuffer] AS [ClanTechBuffer], 
+    [Clan].[SkillMaxNum] AS [SkillMaxNum], 
+    [Clan].[SkillVelocity] AS [SkillVelocity], 
+    [Clan].[SkillExpend] AS [SkillExpend], 
+    [Clan].[CampID] AS [CampID], 
+    [Clan].[SeignioryBuffer] AS [SeignioryBuffer], 
+    [Clan].[OfflineTime] AS [OfflineTime], 
+    [Clan].[AllyConIDFst] AS [AllyConIDFst], 
+    [Clan].[AllyConIDSec] AS [AllyConIDSec], 
+    [Clan].[ClanActorName] AS [ClanActorName], 
+    [Clan].[ClanSparePerson] AS [ClanSparePerson], 
+    [Clan].[ClanSpareNum] AS [ClanSpareNum], 
+    [Clan].[ClanPaySparePerson] AS [ClanPaySparePerson], 
+    [Clan].[ClanPaySpareNum] AS [ClanPaySpareNum], 
+    [Clan].[ClanID] AS [ClanID]
+    FROM [dbo].[Clan] AS [Clan]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ClanActor" EntityType="Self.ClanActor" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ClanActor].[ClanID] AS [ClanID], 
+    [ClanActor].[ActorID] AS [ActorID], 
+    [ClanActor].[ContributeNum] AS [ContributeNum], 
+    [ClanActor].[ActiveNum] AS [ActiveNum], 
+    [ClanActor].[PositonID] AS [PositonID], 
+    [ClanActor].[NickID] AS [NickID], 
+    [ClanActor].[TopClanID] AS [TopClanID], 
+    [ClanActor].[ID] AS [ID]
+    FROM [dbo].[ClanActor] AS [ClanActor]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ClanActor_Apply" EntityType="Self.ClanActor_Apply" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ClanActor_Apply].[ClanID] AS [ClanID], 
+    [ClanActor_Apply].[ActorID] AS [ActorID], 
+    [ClanActor_Apply].[ApplyTime] AS [ApplyTime], 
+    [ClanActor_Apply].[ExploitLevel] AS [ExploitLevel], 
+    [ClanActor_Apply].[Activity] AS [Activity]
+    FROM [dbo].[ClanActor_Apply] AS [ClanActor_Apply]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ClanBattleInfo" EntityType="Self.ClanBattleInfo" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ClanBattleInfo].[BattleStartClanID] AS [BattleStartClanID], 
+    [ClanBattleInfo].[BattleEndClanID] AS [BattleEndClanID], 
+    [ClanBattleInfo].[BattleStartTime] AS [BattleStartTime], 
+    [ClanBattleInfo].[KillEnemeyNum] AS [KillEnemeyNum], 
+    [ClanBattleInfo].[KilledNum] AS [KilledNum], 
+    [ClanBattleInfo].[ChalllengeScore] AS [ChalllengeScore], 
+    [ClanBattleInfo].[AcceptedScore] AS [AcceptedScore], 
+    [ClanBattleInfo].[BattleResult] AS [BattleResult], 
+    [ClanBattleInfo].[BattleID] AS [BattleID], 
+    [ClanBattleInfo].[BattleEndTime] AS [BattleEndTime]
+    FROM [dbo].[ClanBattleInfo] AS [ClanBattleInfo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ClanConsortia" EntityType="Self.ClanConsortia" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ClanConsortia].[ClanID] AS [ClanID], 
+    [ClanConsortia].[PositionID] AS [PositionID], 
+    [ClanConsortia].[Permission] AS [Permission]
+    FROM [dbo].[ClanConsortia] AS [ClanConsortia]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ClanNick" EntityType="Self.ClanNick" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ClanNick].[ClanID] AS [ClanID], 
+    [ClanNick].[NickID] AS [NickID], 
+    [ClanNick].[NickName] AS [NickName]
+    FROM [dbo].[ClanNick] AS [ClanNick]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GameActor_Event_Log" EntityType="Self.GameActor_Event_Log" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GameActor_Event_Log].[ActorID] AS [ActorID], 
+    [GameActor_Event_Log].[EventType] AS [EventType], 
+    [GameActor_Event_Log].[LogCount] AS [LogCount], 
+    [GameActor_Event_Log].[LogBufData] AS [LogBufData]
+    FROM [dbo].[GameActor_Event_Log] AS [GameActor_Event_Log]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GameActor_Master" EntityType="Self.GameActor_Master" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GameActor_Master].[ActorID] AS [ActorID], 
+    [GameActor_Master].[RelationID] AS [RelationID], 
+    [GameActor_Master].[DismissFlag] AS [DismissFlag], 
+    [GameActor_Master].[Contribution] AS [Contribution], 
+    [GameActor_Master].[DismissTime] AS [DismissTime], 
+    [GameActor_Master].[Type] AS [Type]
+    FROM [dbo].[GameActor_Master] AS [GameActor_Master]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GameActor_MasterReg" EntityType="Self.GameActor_MasterReg" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GameActor_MasterReg].[ActorID] AS [ActorID], 
+    [GameActor_MasterReg].[RegMasterTime] AS [RegMasterTime], 
+    [GameActor_MasterReg].[MasterDeclar] AS [MasterDeclar]
+    FROM [dbo].[GameActor_MasterReg] AS [GameActor_MasterReg]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GameActor_Nick" EntityType="Self.GameActor_Nick" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GameActor_Nick].[ActorID] AS [ActorID], 
+    [GameActor_Nick].[CurNickID] AS [CurNickID], 
+    [GameActor_Nick].[OwnedNum] AS [OwnedNum], 
+    [GameActor_Nick].[KnownNum] AS [KnownNum], 
+    [GameActor_Nick].[BufData] AS [BufData], 
+    [GameActor_Nick].[ID] AS [ID]
+    FROM [dbo].[GameActor_Nick] AS [GameActor_Nick]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GameActorOffMsg" EntityType="Self.GameActorOffMsg" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GameActorOffMsg].[ActorID] AS [ActorID], 
+    [GameActorOffMsg].[RelationID] AS [RelationID], 
+    [GameActorOffMsg].[Message] AS [Message], 
+    [GameActorOffMsg].[ID] AS [ID]
+    FROM [dbo].[GameActorOffMsg] AS [GameActorOffMsg]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GameEmail" EntityType="Self.GameEmail" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GameEmail].[FromActorID] AS [FromActorID], 
+    [GameEmail].[ToActorName] AS [ToActorName], 
+    [GameEmail].[EmailTitle] AS [EmailTitle], 
+    [GameEmail].[EmailBody] AS [EmailBody], 
+    [GameEmail].[MoneyNum] AS [MoneyNum], 
+    [GameEmail].[AttachNum] AS [AttachNum], 
+    [GameEmail].[GoodsBuf] AS [GoodsBuf], 
+    [GameEmail].[WriteTime] AS [WriteTime], 
+    [GameEmail].[EmailID] AS [EmailID], 
+    [GameEmail].[Status] AS [Status], 
+    [GameEmail].[GoodsIcodID] AS [GoodsIcodID]
+    FROM [dbo].[GameEmail] AS [GameEmail]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GameMapGround" EntityType="Self.GameMapGround" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GameMapGround].[MapID] AS [MapID], 
+    [GameMapGround].[UseGroundNum] AS [UseGroundNum], 
+    [GameMapGround].[UseGroundBuffer] AS [UseGroundBuffer]
+    FROM [dbo].[GameMapGround] AS [GameMapGround]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GameRank" EntityType="Self.GameRank" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GameRank].[RankType] AS [RankType], 
+    [GameRank].[RankKey] AS [RankKey], 
+    [GameRank].[RankIndex] AS [RankIndex], 
+    [GameRank].[DynamicValue1] AS [DynamicValue1], 
+    [GameRank].[DynamicValue2] AS [DynamicValue2], 
+    [GameRank].[DynamicValue3] AS [DynamicValue3], 
+    [GameRank].[DynamicValue4] AS [DynamicValue4], 
+    [GameRank].[AttachInfo] AS [AttachInfo], 
+    [GameRank].[Time] AS [Time], 
+    [GameRank].[BufData] AS [BufData], 
+    [GameRank].[Nums] AS [Nums]
+    FROM [dbo].[GameRank] AS [GameRank]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Goods" EntityType="Self.Goods" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Goods].[ContainerID] AS [ContainerID], 
+    [Goods].[ActorID] AS [ActorID], 
+    [Goods].[GoodsBuf] AS [GoodsBuf], 
+    [Goods].[GoodsNum] AS [GoodsNum]
+    FROM [dbo].[Goods] AS [Goods]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Goods_Auction" EntityType="Self.Goods_Auction" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Goods_Auction].[ID] AS [ID], 
+    [Goods_Auction].[SellActorID] AS [SellActorID], 
+    [Goods_Auction].[SellGoodsID] AS [SellGoodsID], 
+    [Goods_Auction].[SellBaseMoney] AS [SellBaseMoney], 
+    [Goods_Auction].[RebootMode] AS [RebootMode], 
+    [Goods_Auction].[PayMode] AS [PayMode], 
+    [Goods_Auction].[SellMode] AS [SellMode], 
+    [Goods_Auction].[BuyLowestLevel] AS [BuyLowestLevel], 
+    [Goods_Auction].[RiseMinRange] AS [RiseMinRange], 
+    [Goods_Auction].[GoodsBuffer] AS [GoodsBuffer], 
+    [Goods_Auction].[SellLeftTime] AS [SellLeftTime], 
+    [Goods_Auction].[ItemName] AS [ItemName], 
+    [Goods_Auction].[LastBuyerActorID] AS [LastBuyerActorID], 
+    [Goods_Auction].[LastBuyerPayment] AS [LastBuyerPayment], 
+    [Goods_Auction].[LastBuyerServerID] AS [LastBuyerServerID]
+    FROM [dbo].[Goods_Auction] AS [Goods_Auction]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Goods_Trade" EntityType="Self.Goods_Trade" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Goods_Trade].[ServerID] AS [ServerID], 
+    [Goods_Trade].[ActorID] AS [ActorID], 
+    [Goods_Trade].[GoodsID] AS [GoodsID], 
+    [Goods_Trade].[Price] AS [Price], 
+    [Goods_Trade].[ItemName] AS [ItemName], 
+    [Goods_Trade].[AddTime] AS [AddTime], 
+    [Goods_Trade].[ExpireHour] AS [ExpireHour], 
+    [Goods_Trade].[GoodsBuffer] AS [GoodsBuffer], 
+    [Goods_Trade].[Rid] AS [Rid]
+    FROM [dbo].[Goods_Trade] AS [Goods_Trade]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GoodsClinchDetail" EntityType="Self.GoodsClinchDetail" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GoodsClinchDetail].[Time] AS [Time], 
+    [GoodsClinchDetail].[GoodsID] AS [GoodsID], 
+    [GoodsClinchDetail].[Price] AS [Price], 
+    [GoodsClinchDetail].[num] AS [num]
+    FROM [dbo].[GoodsClinchDetail] AS [GoodsClinchDetail]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="GoodsClinchInfo" EntityType="Self.GoodsClinchInfo" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [GoodsClinchInfo].[GoodsID] AS [GoodsID], 
+    [GoodsClinchInfo].[LastTradePrice] AS [LastTradePrice], 
+    [GoodsClinchInfo].[DayAvagePrice] AS [DayAvagePrice], 
+    [GoodsClinchInfo].[NumFlag] AS [NumFlag]
+    FROM [dbo].[GoodsClinchInfo] AS [GoodsClinchInfo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="House" EntityType="Self.House" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [House].[EntryID] AS [EntryID], 
+    [House].[DynamicID] AS [DynamicID], 
+    [House].[HouseKey] AS [HouseKey], 
+    [House].[StatusKey] AS [StatusKey], 
+    [House].[ActorID] AS [ActorID], 
+    [House].[HouseName] AS [HouseName], 
+    [House].[HouseLevel] AS [HouseLevel], 
+    [House].[HouseBuff] AS [HouseBuff], 
+    [House].[Integral] AS [Integral], 
+    [House].[LastVisit] AS [LastVisit], 
+    [House].[ParkKey] AS [ParkKey], 
+    [House].[HouseID] AS [HouseID], 
+    [House].[DataLen] AS [DataLen]
+    FROM [dbo].[House] AS [House]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="HouseEntry" EntityType="Self.HouseEntry" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [HouseEntry].[EntryID] AS [EntryID], 
+    [HouseEntry].[ServerID] AS [ServerID], 
+    [HouseEntry].[HouseID] AS [HouseID], 
+    [HouseEntry].[OwnerActorID] AS [OwnerActorID], 
+    [HouseEntry].[StartDate] AS [StartDate], 
+    [HouseEntry].[ValidDays] AS [ValidDays], 
+    [HouseEntry].[DelayFlag] AS [DelayFlag], 
+    [HouseEntry].[IsUsed] AS [IsUsed], 
+    [HouseEntry].[DoorSerialID] AS [DoorSerialID], 
+    [HouseEntry].[AttachSvrID] AS [AttachSvrID]
+    FROM [dbo].[HouseEntry] AS [HouseEntry]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Interact" EntityType="Self.Interact" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Interact].[TypeID] AS [TypeID], 
+    [Interact].[ServerID] AS [ServerID], 
+    [Interact].[OwnerID] AS [OwnerID], 
+    [Interact].[DataBuffer] AS [DataBuffer], 
+    [Interact].[ID] AS [ID]
+    FROM [dbo].[Interact] AS [Interact]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="NickInfo" EntityType="Self.NickInfo" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [NickInfo].[NickID] AS [NickID], 
+    [NickInfo].[OwnedActorNum] AS [OwnedActorNum], 
+    [NickInfo].[ID] AS [ID]
+    FROM [dbo].[NickInfo] AS [NickInfo]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Relation" EntityType="Self.Relation" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Relation].[ActorID] AS [ActorID], 
+    [Relation].[SetTing] AS [SetTing], 
+    [Relation].[ActorInfo] AS [ActorInfo], 
+    [Relation].[FavorDegree] AS [FavorDegree], 
+    [Relation].[Fate] AS [Fate], 
+    [Relation].[RelationID] AS [RelationID], 
+    [Relation].[Type] AS [Type], 
+    [Relation].[MapID] AS [MapID], 
+    [Relation].[Reservel] AS [Reservel], 
+    [Relation].[CurTime] AS [CurTime]
+    FROM [dbo].[Relation] AS [Relation]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Relation_OffMsg" EntityType="Self.Relation_OffMsg" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Relation_OffMsg].[ActorID] AS [ActorID], 
+    [Relation_OffMsg].[RelationID] AS [RelationID], 
+    [Relation_OffMsg].[MsgType] AS [MsgType]
+    FROM [dbo].[Relation_OffMsg] AS [Relation_OffMsg]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="ResControl" EntityType="Self.ResControl" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [ResControl].[ID] AS [ID], 
+    [ResControl].[Type] AS [Type], 
+    [ResControl].[DataBuffer] AS [DataBuffer]
+    FROM [dbo].[ResControl] AS [ResControl]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

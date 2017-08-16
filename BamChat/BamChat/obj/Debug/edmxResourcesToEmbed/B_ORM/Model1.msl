@@ -1,0 +1,527 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="GameDBModelStoreContainer" CdmEntityContainer="GameDBEntities">
+    <EntitySetMapping Name="Actors">
+      <EntityTypeMapping TypeName="GameDBModel.Actor">
+        <MappingFragment StoreEntitySet="Actor">
+          <ScalarProperty Name="UsreID" ColumnName="UsreID" />
+          <ScalarProperty Name="ActorName" ColumnName="ActorName" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="CampID" ColumnName="CampID" />
+          <ScalarProperty Name="FaceID" ColumnName="FaceID" />
+          <ScalarProperty Name="HairStyle" ColumnName="HairStyle" />
+          <ScalarProperty Name="ScenceID" ColumnName="ScenceID" />
+          <ScalarProperty Name="AppearRes" ColumnName="AppearRes" />
+          <ScalarProperty Name="OtherAppearRes" ColumnName="OtherAppearRes" />
+          <ScalarProperty Name="CreateIp" ColumnName="CreateIp" />
+          <ScalarProperty Name="ServerName" ColumnName="ServerName" />
+          <ScalarProperty Name="ExploitLevel" ColumnName="ExploitLevel" />
+          <ScalarProperty Name="CurMapID" ColumnName="CurMapID" />
+          <ScalarProperty Name="BackMapID" ColumnName="BackMapID" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="CurMapLocX" ColumnName="CurMapLocX" />
+          <ScalarProperty Name="ClanID" ColumnName="ClanID" />
+          <ScalarProperty Name="CurMapLocY" ColumnName="CurMapLocY" />
+          <ScalarProperty Name="Macaddr" ColumnName="Macaddr" />
+          <ScalarProperty Name="BackMapLocX" ColumnName="BackMapLocX" />
+          <ScalarProperty Name="BackMapLocY" ColumnName="BackMapLocY" />
+          <ScalarProperty Name="HoldMoney" ColumnName="HoldMoney" />
+          <ScalarProperty Name="WareMoney" ColumnName="WareMoney" />
+          <ScalarProperty Name="HomeMoney" ColumnName="HomeMoney" />
+          <ScalarProperty Name="CurHP" ColumnName="CurHP" />
+          <ScalarProperty Name="CurPW" ColumnName="CurPW" />
+          <ScalarProperty Name="CurJE" ColumnName="CurJE" />
+          <ScalarProperty Name="ExploitAll" ColumnName="ExploitAll" />
+          <ScalarProperty Name="BattSkill" ColumnName="BattSkill" />
+          <ScalarProperty Name="LiveSkill" ColumnName="LiveSkill" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="ColdTime" ColumnName="ColdTime" />
+          <ScalarProperty Name="ShortCut" ColumnName="ShortCut" />
+          <ScalarProperty Name="BagsBuffer" ColumnName="BagsBuffer" />
+          <ScalarProperty Name="ClanBuffer" ColumnName="ClanBuffer" />
+          <ScalarProperty Name="CheckBuffer" ColumnName="CheckBuffer" />
+          <ScalarProperty Name="PetBuffer" ColumnName="PetBuffer" />
+          <ScalarProperty Name="BagGoodsBuffer" ColumnName="BagGoodsBuffer" />
+          <ScalarProperty Name="VehicalBuffer" ColumnName="VehicalBuffer" />
+          <ScalarProperty Name="KeyPropBuffer" ColumnName="KeyPropBuffer" />
+          <ScalarProperty Name="Config" ColumnName="Config" />
+          <ScalarProperty Name="GMpurview" ColumnName="GMpurview" />
+          <ScalarProperty Name="HaveNewEmailFlag" ColumnName="HaveNewEmailFlag" />
+          <ScalarProperty Name="Point" ColumnName="Point" />
+          <ScalarProperty Name="LandNum" ColumnName="LandNum" />
+          <ScalarProperty Name="BattlePower" ColumnName="BattlePower" />
+          <ScalarProperty Name="ShoppingMoney" ColumnName="ShoppingMoney" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="PayFlag" ColumnName="PayFlag" />
+          <ScalarProperty Name="RankBuff" ColumnName="RankBuff" />
+          <ScalarProperty Name="ActorID" ColumnName="ActorID" />
+          <ScalarProperty Name="LoginType" ColumnName="LoginType" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="ReserveBuff" ColumnName="ReserveBuff" />
+          <ScalarProperty Name="LastTime" ColumnName="LastTime" />
+          <ScalarProperty Name="LevelTime" ColumnName="LevelTime" />
+          <ScalarProperty Name="SetTing" ColumnName="SetTing" />
+          <ScalarProperty Name="ActorInfo" ColumnName="ActorInfo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ActorRanks">
+      <EntityTypeMapping TypeName="GameDBModel.ActorRank">
+        <MappingFragment StoreEntitySet="ActorRank">
+          <ScalarProperty Name="ActorID" ColumnName="ActorID" />
+          <ScalarProperty Name="RankType" ColumnName="RankType" />
+          <ScalarProperty Name="TopValue" ColumnName="TopValue" />
+          <ScalarProperty Name="StatDate" ColumnName="StatDate" />
+          <ScalarProperty Name="CampID" ColumnName="CampID" />
+          <ScalarProperty Name="ExpLevel" ColumnName="ExpLevel" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ActorName" ColumnName="ActorName" />
+          <ScalarProperty Name="ActiveValue" ColumnName="ActiveValue" />
+          <ScalarProperty Name="RankSerial" ColumnName="RankSerial" />
+          <ScalarProperty Name="RankValue" ColumnName="RankValue" />
+          <ScalarProperty Name="DynamicValue1" ColumnName="DynamicValue1" />
+          <ScalarProperty Name="DynamicValue2" ColumnName="DynamicValue2" />
+          <ScalarProperty Name="DynamicValue3" ColumnName="DynamicValue3" />
+          <ScalarProperty Name="DynamicText" ColumnName="DynamicText" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BattleTeams">
+      <EntityTypeMapping TypeName="GameDBModel.BattleTeam">
+        <MappingFragment StoreEntitySet="BattleTeam">
+          <ScalarProperty Name="BattleTeamID" ColumnName="BattleTeamID" />
+          <ScalarProperty Name="MasterID" ColumnName="MasterID" />
+          <ScalarProperty Name="BattleTeamName" ColumnName="BattleTeamName" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="PushCastleNum" ColumnName="PushCastleNum" />
+          <ScalarProperty Name="KillEnemeyNum" ColumnName="KillEnemeyNum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BattleTeam_Member">
+      <EntityTypeMapping TypeName="GameDBModel.BattleTeam_Member">
+        <MappingFragment StoreEntitySet="BattleTeam_Member">
+          <ScalarProperty Name="ActorID" ColumnName="ActorID" />
+          <ScalarProperty Name="BattleTeamID" ColumnName="BattleTeamID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BattleTeamPKLogs">
+      <EntityTypeMapping TypeName="GameDBModel.BattleTeamPKLog">
+        <MappingFragment StoreEntitySet="BattleTeamPKLog">
+          <ScalarProperty Name="RedTeam_ID" ColumnName="RedTeam_ID" />
+          <ScalarProperty Name="BlueTeam_ID" ColumnName="BlueTeam_ID" />
+          <ScalarProperty Name="PushCastleNum_Red" ColumnName="PushCastleNum_Red" />
+          <ScalarProperty Name="KillEnemeyNum_Red" ColumnName="KillEnemeyNum_Red" />
+          <ScalarProperty Name="PushCastleNum_Blue" ColumnName="PushCastleNum_Blue" />
+          <ScalarProperty Name="KillEnemeyNum_Blue" ColumnName="KillEnemeyNum_Blue" />
+          <ScalarProperty Name="WinTeamID" ColumnName="WinTeamID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BourseInfoes">
+      <EntityTypeMapping TypeName="GameDBModel.BourseInfo">
+        <MappingFragment StoreEntitySet="BourseInfo">
+          <ScalarProperty Name="ActorID" ColumnName="ActorID" />
+          <ScalarProperty Name="BuyOrSell" ColumnName="BuyOrSell" />
+          <ScalarProperty Name="GoodsID" ColumnName="GoodsID" />
+          <ScalarProperty Name="GoodsName" ColumnName="GoodsName" />
+          <ScalarProperty Name="SinglePrice" ColumnName="SinglePrice" />
+          <ScalarProperty Name="GoodsNum" ColumnName="GoodsNum" />
+          <ScalarProperty Name="ExpriceHour" ColumnName="ExpriceHour" />
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+          <ScalarProperty Name="Rid" ColumnName="Rid" />
+          <ScalarProperty Name="LeftNum" ColumnName="LeftNum" />
+          <ScalarProperty Name="ExpireTime" ColumnName="ExpireTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BrotherHoods">
+      <EntityTypeMapping TypeName="GameDBModel.BrotherHood">
+        <MappingFragment StoreEntitySet="BrotherHood">
+          <ScalarProperty Name="BrotherHoodName" ColumnName="BrotherHoodName" />
+          <ScalarProperty Name="BrotherHoodScore" ColumnName="BrotherHoodScore" />
+          <ScalarProperty Name="BrotherHoodLevel" ColumnName="BrotherHoodLevel" />
+          <ScalarProperty Name="MasterID" ColumnName="MasterID" />
+          <ScalarProperty Name="BrotherHoodId" ColumnName="BrotherHoodId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BrotherHood_Member">
+      <EntityTypeMapping TypeName="GameDBModel.BrotherHood_Member">
+        <MappingFragment StoreEntitySet="BrotherHood_Member">
+          <ScalarProperty Name="ActorID" ColumnName="ActorID" />
+          <ScalarProperty Name="BrotherHoodID" ColumnName="BrotherHoodID" />
+          <ScalarProperty Name="NickName" ColumnName="NickName" />
+          <ScalarProperty Name="Rights" ColumnName="Rights" />
+          <ScalarProperty Name="FriendValue" ColumnName="FriendValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CDKeyCode_Award">
+      <EntityTypeMapping TypeName="GameDBModel.CDKeyCode_Award">
+        <MappingFragment StoreEntitySet="CDKeyCode_Award">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="ActorID" ColumnName="ActorID" />
+          <ScalarProperty Name="ActorLevel" ColumnName="ActorLevel" />
+          <ScalarProperty Name="ServerName" ColumnName="ServerName" />
+          <ScalarProperty Name="CDKeyType" ColumnName="CDKeyType" />
+          <ScalarProperty Name="CDKeyCode" ColumnName="CDKeyCode" />
+          <ScalarProperty Name="IsUsed" ColumnName="IsUsed" />
+          <ScalarProperty Name="Ip" ColumnName="Ip" />
+          <ScalarProperty Name="Mac" ColumnName="Mac" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Clans">
+      <EntityTypeMapping TypeName="GameDBModel.Clan">
+        <MappingFragment StoreEntitySet="Clan">
+          <ScalarProperty Name="ClanName" ColumnName="ClanName" />
+          <ScalarProperty Name="ClanServerID" ColumnName="ClanServerID" />
+          <ScalarProperty Name="ClanActorID" ColumnName="ClanActorID" />
+          <ScalarProperty Name="ClanIcon" ColumnName="ClanIcon" />
+          <ScalarProperty Name="ClanParentID" ColumnName="ClanParentID" />
+          <ScalarProperty Name="ClanTime" ColumnName="ClanTime" />
+          <ScalarProperty Name="Popularity" ColumnName="Popularity" />
+          <ScalarProperty Name="WeekActivity" ColumnName="WeekActivity" />
+          <ScalarProperty Name="DelSource" ColumnName="DelSource" />
+          <ScalarProperty Name="ClanDesc" ColumnName="ClanDesc" />
+          <ScalarProperty Name="ClanMoney" ColumnName="ClanMoney" />
+          <ScalarProperty Name="ClanExp" ColumnName="ClanExp" />
+          <ScalarProperty Name="ClanLevel" ColumnName="ClanLevel" />
+          <ScalarProperty Name="ClanTech" ColumnName="ClanTech" />
+          <ScalarProperty Name="ClanTech2" ColumnName="ClanTech2" />
+          <ScalarProperty Name="ClanTech3" ColumnName="ClanTech3" />
+          <ScalarProperty Name="ClanTechBuffer" ColumnName="ClanTechBuffer" />
+          <ScalarProperty Name="SkillMaxNum" ColumnName="SkillMaxNum" />
+          <ScalarProperty Name="SkillVelocity" ColumnName="SkillVelocity" />
+          <ScalarProperty Name="SkillExpend" ColumnName="SkillExpend" />
+          <ScalarProperty Name="CampID" ColumnName="CampID" />
+          <ScalarProperty Name="SeignioryBuffer" ColumnName="SeignioryBuffer" />
+          <ScalarProperty Name="OfflineTime" ColumnName="OfflineTime" />
+          <ScalarProperty Name="AllyConIDFst" ColumnName="AllyConIDFst" />
+          <ScalarProperty Name="AllyConIDSec" ColumnName="AllyConIDSec" />
+          <ScalarProperty Name="ClanActorName" ColumnName="ClanActorName" />
+          <ScalarProperty Name="ClanSparePerson" ColumnName="ClanSparePerson" />
+          <ScalarProperty Name="ClanSpareNum" ColumnName="ClanSpareNum" />
+          <ScalarProperty Name="ClanPaySparePerson" ColumnName="ClanPaySparePerson" />
+          <ScalarProperty Name="ClanPaySpareNum" ColumnName="ClanPaySpareNum" />
+          <ScalarProperty Name="ClanID" ColumnName="ClanID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClanActors">
+      <EntityTypeMapping TypeName="GameDBModel.ClanActor">
+        <MappingFragment StoreEntitySet="ClanActor">
+          <ScalarProperty Name="ClanID" ColumnName="ClanID" />
+          <ScalarProperty Name="ActorID" ColumnName="ActorID" />
+          <ScalarProperty Name="ContributeNum" ColumnName="ContributeNum" />
+          <ScalarProperty Name="ActiveNum" ColumnName="ActiveNum" />
+          <ScalarProperty Name="PositonID" ColumnName="PositonID" />
+          <ScalarProperty Name="NickID" ColumnName="NickID" />
+          <ScalarProperty Name="TopClanID" ColumnName="TopClanID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClanActor_Apply">
+      <EntityTypeMapping TypeName="GameDBModel.ClanActor_Apply">
+        <MappingFragment StoreEntitySet="ClanActor_Apply">
+          <ScalarProperty Name="ClanID" ColumnName="ClanID" />
+          <ScalarProperty Name="ActorID" ColumnName="ActorID" />
+          <ScalarProperty Name="ApplyTime" ColumnName="ApplyTime" />
+          <ScalarProperty Name="ExploitLevel" ColumnName="ExploitLevel" />
+          <ScalarProperty Name="Activity" ColumnName="Activity" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClanBattleInfoes">
+      <EntityTypeMapping TypeName="GameDBModel.ClanBattleInfo">
+        <MappingFragment StoreEntitySet="ClanBattleInfo">
+          <ScalarProperty Name="BattleStartClanID" ColumnName="BattleStartClanID" />
+          <ScalarProperty Name="BattleEndClanID" ColumnName="BattleEndClanID" />
+          <ScalarProperty Name="BattleStartTime" ColumnName="BattleStartTime" />
+          <ScalarProperty Name="KillEnemeyNum" ColumnName="KillEnemeyNum" />
+          <ScalarProperty Name="KilledNum" ColumnName="KilledNum" />
+          <ScalarProperty Name="ChalllengeScore" ColumnName="ChalllengeScore" />
+          <ScalarProperty Name="AcceptedScore" ColumnName="AcceptedScore" />
+          <ScalarProperty Name="BattleResult" ColumnName="BattleResult" />
+          <ScalarProperty Name="BattleID" ColumnName="BattleID" />
+          <ScalarProperty Name="BattleEndTime" ColumnName="BattleEndTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClanConsortias">
+      <EntityTypeMapping TypeName="GameDBModel.ClanConsortia">
+        <MappingFragment StoreEntitySet="ClanConsortia">
+          <ScalarProperty Name="ClanID" ColumnName="ClanID" />
+          <ScalarProperty Name="PositionID" ColumnName="PositionID" />
+          <ScalarProperty Name="Permission" ColumnName="Permission" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ClanNicks">
+      <EntityTypeMapping TypeName="GameDBModel.ClanNick">
+        <MappingFragment StoreEntitySet="ClanNick">
+          <ScalarProperty Name="ClanID" ColumnName="ClanID" />
+          <ScalarProperty Name="NickID" ColumnName="NickID" />
+          <ScalarProperty Name="NickName" ColumnName="NickName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GameActor_Event_Log">
+      <EntityTypeMapping TypeName="GameDBModel.GameActor_Event_Log">
+        <MappingFragment StoreEntitySet="GameActor_Event_Log">
+          <ScalarProperty Name="ActorID" ColumnName="ActorID" />
+          <ScalarProperty Name="EventType" ColumnName="EventType" />
+          <ScalarProperty Name="LogCount" ColumnName="LogCount" />
+          <ScalarProperty Name="LogBufData" ColumnName="LogBufData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GameActor_Master">
+      <EntityTypeMapping TypeName="GameDBModel.GameActor_Master">
+        <MappingFragment StoreEntitySet="GameActor_Master">
+          <ScalarProperty Name="ActorID" ColumnName="ActorID" />
+          <ScalarProperty Name="RelationID" ColumnName="RelationID" />
+          <ScalarProperty Name="DismissFlag" ColumnName="DismissFlag" />
+          <ScalarProperty Name="Contribution" ColumnName="Contribution" />
+          <ScalarProperty Name="DismissTime" ColumnName="DismissTime" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GameActor_MasterReg">
+      <EntityTypeMapping TypeName="GameDBModel.GameActor_MasterReg">
+        <MappingFragment StoreEntitySet="GameActor_MasterReg">
+          <ScalarProperty Name="ActorID" ColumnName="ActorID" />
+          <ScalarProperty Name="RegMasterTime" ColumnName="RegMasterTime" />
+          <ScalarProperty Name="MasterDeclar" ColumnName="MasterDeclar" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GameActor_Nick">
+      <EntityTypeMapping TypeName="GameDBModel.GameActor_Nick">
+        <MappingFragment StoreEntitySet="GameActor_Nick">
+          <ScalarProperty Name="ActorID" ColumnName="ActorID" />
+          <ScalarProperty Name="CurNickID" ColumnName="CurNickID" />
+          <ScalarProperty Name="OwnedNum" ColumnName="OwnedNum" />
+          <ScalarProperty Name="KnownNum" ColumnName="KnownNum" />
+          <ScalarProperty Name="BufData" ColumnName="BufData" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GameActorOffMsgs">
+      <EntityTypeMapping TypeName="GameDBModel.GameActorOffMsg">
+        <MappingFragment StoreEntitySet="GameActorOffMsg">
+          <ScalarProperty Name="ActorID" ColumnName="ActorID" />
+          <ScalarProperty Name="RelationID" ColumnName="RelationID" />
+          <ScalarProperty Name="Message" ColumnName="Message" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GameEmails">
+      <EntityTypeMapping TypeName="GameDBModel.GameEmail">
+        <MappingFragment StoreEntitySet="GameEmail">
+          <ScalarProperty Name="FromActorID" ColumnName="FromActorID" />
+          <ScalarProperty Name="ToActorName" ColumnName="ToActorName" />
+          <ScalarProperty Name="EmailTitle" ColumnName="EmailTitle" />
+          <ScalarProperty Name="EmailBody" ColumnName="EmailBody" />
+          <ScalarProperty Name="MoneyNum" ColumnName="MoneyNum" />
+          <ScalarProperty Name="AttachNum" ColumnName="AttachNum" />
+          <ScalarProperty Name="GoodsBuf" ColumnName="GoodsBuf" />
+          <ScalarProperty Name="WriteTime" ColumnName="WriteTime" />
+          <ScalarProperty Name="EmailID" ColumnName="EmailID" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="GoodsIcodID" ColumnName="GoodsIcodID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GameMapGrounds">
+      <EntityTypeMapping TypeName="GameDBModel.GameMapGround">
+        <MappingFragment StoreEntitySet="GameMapGround">
+          <ScalarProperty Name="MapID" ColumnName="MapID" />
+          <ScalarProperty Name="UseGroundNum" ColumnName="UseGroundNum" />
+          <ScalarProperty Name="UseGroundBuffer" ColumnName="UseGroundBuffer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GameRanks">
+      <EntityTypeMapping TypeName="GameDBModel.GameRank">
+        <MappingFragment StoreEntitySet="GameRank">
+          <ScalarProperty Name="RankType" ColumnName="RankType" />
+          <ScalarProperty Name="RankKey" ColumnName="RankKey" />
+          <ScalarProperty Name="RankIndex" ColumnName="RankIndex" />
+          <ScalarProperty Name="DynamicValue1" ColumnName="DynamicValue1" />
+          <ScalarProperty Name="DynamicValue2" ColumnName="DynamicValue2" />
+          <ScalarProperty Name="DynamicValue3" ColumnName="DynamicValue3" />
+          <ScalarProperty Name="DynamicValue4" ColumnName="DynamicValue4" />
+          <ScalarProperty Name="AttachInfo" ColumnName="AttachInfo" />
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="BufData" ColumnName="BufData" />
+          <ScalarProperty Name="Nums" ColumnName="Nums" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Goods">
+      <EntityTypeMapping TypeName="GameDBModel.Good">
+        <MappingFragment StoreEntitySet="Goods">
+          <ScalarProperty Name="ContainerID" ColumnName="ContainerID" />
+          <ScalarProperty Name="ActorID" ColumnName="ActorID" />
+          <ScalarProperty Name="GoodsBuf" ColumnName="GoodsBuf" />
+          <ScalarProperty Name="GoodsNum" ColumnName="GoodsNum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Goods_Auction">
+      <EntityTypeMapping TypeName="GameDBModel.Goods_Auction">
+        <MappingFragment StoreEntitySet="Goods_Auction">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SellActorID" ColumnName="SellActorID" />
+          <ScalarProperty Name="SellGoodsID" ColumnName="SellGoodsID" />
+          <ScalarProperty Name="SellBaseMoney" ColumnName="SellBaseMoney" />
+          <ScalarProperty Name="RebootMode" ColumnName="RebootMode" />
+          <ScalarProperty Name="PayMode" ColumnName="PayMode" />
+          <ScalarProperty Name="SellMode" ColumnName="SellMode" />
+          <ScalarProperty Name="BuyLowestLevel" ColumnName="BuyLowestLevel" />
+          <ScalarProperty Name="RiseMinRange" ColumnName="RiseMinRange" />
+          <ScalarProperty Name="GoodsBuffer" ColumnName="GoodsBuffer" />
+          <ScalarProperty Name="SellLeftTime" ColumnName="SellLeftTime" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="LastBuyerActorID" ColumnName="LastBuyerActorID" />
+          <ScalarProperty Name="LastBuyerPayment" ColumnName="LastBuyerPayment" />
+          <ScalarProperty Name="LastBuyerServerID" ColumnName="LastBuyerServerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Goods_Trade">
+      <EntityTypeMapping TypeName="GameDBModel.Goods_Trade">
+        <MappingFragment StoreEntitySet="Goods_Trade">
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="ActorID" ColumnName="ActorID" />
+          <ScalarProperty Name="GoodsID" ColumnName="GoodsID" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="AddTime" ColumnName="AddTime" />
+          <ScalarProperty Name="ExpireHour" ColumnName="ExpireHour" />
+          <ScalarProperty Name="GoodsBuffer" ColumnName="GoodsBuffer" />
+          <ScalarProperty Name="Rid" ColumnName="Rid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GoodsClinchDetails">
+      <EntityTypeMapping TypeName="GameDBModel.GoodsClinchDetail">
+        <MappingFragment StoreEntitySet="GoodsClinchDetail">
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="GoodsID" ColumnName="GoodsID" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="num" ColumnName="num" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GoodsClinchInfoes">
+      <EntityTypeMapping TypeName="GameDBModel.GoodsClinchInfo">
+        <MappingFragment StoreEntitySet="GoodsClinchInfo">
+          <ScalarProperty Name="GoodsID" ColumnName="GoodsID" />
+          <ScalarProperty Name="LastTradePrice" ColumnName="LastTradePrice" />
+          <ScalarProperty Name="DayAvagePrice" ColumnName="DayAvagePrice" />
+          <ScalarProperty Name="NumFlag" ColumnName="NumFlag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Houses">
+      <EntityTypeMapping TypeName="GameDBModel.House">
+        <MappingFragment StoreEntitySet="House">
+          <ScalarProperty Name="EntryID" ColumnName="EntryID" />
+          <ScalarProperty Name="DynamicID" ColumnName="DynamicID" />
+          <ScalarProperty Name="HouseKey" ColumnName="HouseKey" />
+          <ScalarProperty Name="StatusKey" ColumnName="StatusKey" />
+          <ScalarProperty Name="ActorID" ColumnName="ActorID" />
+          <ScalarProperty Name="HouseName" ColumnName="HouseName" />
+          <ScalarProperty Name="HouseLevel" ColumnName="HouseLevel" />
+          <ScalarProperty Name="HouseBuff" ColumnName="HouseBuff" />
+          <ScalarProperty Name="Integral" ColumnName="Integral" />
+          <ScalarProperty Name="LastVisit" ColumnName="LastVisit" />
+          <ScalarProperty Name="ParkKey" ColumnName="ParkKey" />
+          <ScalarProperty Name="HouseID" ColumnName="HouseID" />
+          <ScalarProperty Name="DataLen" ColumnName="DataLen" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="HouseEntries">
+      <EntityTypeMapping TypeName="GameDBModel.HouseEntry">
+        <MappingFragment StoreEntitySet="HouseEntry">
+          <ScalarProperty Name="EntryID" ColumnName="EntryID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="HouseID" ColumnName="HouseID" />
+          <ScalarProperty Name="OwnerActorID" ColumnName="OwnerActorID" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="ValidDays" ColumnName="ValidDays" />
+          <ScalarProperty Name="DelayFlag" ColumnName="DelayFlag" />
+          <ScalarProperty Name="IsUsed" ColumnName="IsUsed" />
+          <ScalarProperty Name="DoorSerialID" ColumnName="DoorSerialID" />
+          <ScalarProperty Name="AttachSvrID" ColumnName="AttachSvrID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Interacts">
+      <EntityTypeMapping TypeName="GameDBModel.Interact">
+        <MappingFragment StoreEntitySet="Interact">
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="ServerID" ColumnName="ServerID" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="DataBuffer" ColumnName="DataBuffer" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NickInfoes">
+      <EntityTypeMapping TypeName="GameDBModel.NickInfo">
+        <MappingFragment StoreEntitySet="NickInfo">
+          <ScalarProperty Name="NickID" ColumnName="NickID" />
+          <ScalarProperty Name="OwnedActorNum" ColumnName="OwnedActorNum" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Relations">
+      <EntityTypeMapping TypeName="GameDBModel.Relation">
+        <MappingFragment StoreEntitySet="Relation">
+          <ScalarProperty Name="ActorID" ColumnName="ActorID" />
+          <ScalarProperty Name="SetTing" ColumnName="SetTing" />
+          <ScalarProperty Name="ActorInfo" ColumnName="ActorInfo" />
+          <ScalarProperty Name="FavorDegree" ColumnName="FavorDegree" />
+          <ScalarProperty Name="Fate" ColumnName="Fate" />
+          <ScalarProperty Name="RelationID" ColumnName="RelationID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="MapID" ColumnName="MapID" />
+          <ScalarProperty Name="Reservel" ColumnName="Reservel" />
+          <ScalarProperty Name="CurTime" ColumnName="CurTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Relation_OffMsg">
+      <EntityTypeMapping TypeName="GameDBModel.Relation_OffMsg">
+        <MappingFragment StoreEntitySet="Relation_OffMsg">
+          <ScalarProperty Name="ActorID" ColumnName="ActorID" />
+          <ScalarProperty Name="RelationID" ColumnName="RelationID" />
+          <ScalarProperty Name="MsgType" ColumnName="MsgType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResControls">
+      <EntityTypeMapping TypeName="GameDBModel.ResControl">
+        <MappingFragment StoreEntitySet="ResControl">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Type" ColumnName="Type" />
+          <ScalarProperty Name="DataBuffer" ColumnName="DataBuffer" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
