@@ -1,0 +1,13 @@
+C:\Myproject\BamChat\BamRedis\bin\Debug\BamRedis.exe.config
+C:\Myproject\BamChat\BamRedis\bin\Debug\BamRedis.exe
+C:\Myproject\BamChat\BamRedis\bin\Debug\BamRedis.pdb
+C:\Myproject\BamChat\BamRedis\bin\Debug\ServiceStack.Common.dll
+C:\Myproject\BamChat\BamRedis\bin\Debug\ServiceStack.Interfaces.dll
+C:\Myproject\BamChat\BamRedis\bin\Debug\ServiceStack.Redis.dll
+C:\Myproject\BamChat\BamRedis\bin\Debug\ServiceStack.Text.dll
+C:\Myproject\BamChat\BamRedis\bin\Debug\ServiceStack.Common.xml
+C:\Myproject\BamChat\BamRedis\bin\Debug\ServiceStack.Interfaces.xml
+C:\Myproject\BamChat\BamRedis\bin\Debug\ServiceStack.Redis.xml
+C:\Myproject\BamChat\BamRedis\bin\Debug\ServiceStack.Text.xml
+C:\Myproject\BamChat\BamRedis\obj\Debug\BamRedis.exe
+C:\Myproject\BamChat\BamRedis\obj\Debug\BamRedis.pdb
