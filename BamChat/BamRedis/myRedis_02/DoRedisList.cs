@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using ServiceStack.Redis;
 
-namespace BamChat.myRedis
+namespace BamRedis
 {
     /// <summary>
     /// .Net操作Redis数据类型List

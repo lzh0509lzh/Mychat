@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 
-namespace BamChat.myRedis
+namespace BamRedis
 {
     /// <summary>
     /// Redis配置文件
@@ -20,7 +20,7 @@ namespace BamChat.myRedis
         /// <returns></returns>
         public static RedisConfig GetConfig(string sectionName)
         {
-            RedisConfig section = (RedisConfig)ConfigurationManager.GetSection(sectionName);
+            RedisConfig section = (RedisConfig)ConfigurationManager.GetSection(sectionName); //你自定义的对象
             if (section == null)
                 throw new ConfigurationErrorsException("Section " + sectionName + " is not found.");
             return section;

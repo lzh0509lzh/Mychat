@@ -50,7 +50,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>1.ico</ApplicationIcon>
+    <ApplicationIcon>sgin.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject />
@@ -72,6 +72,7 @@
       <HintPath>..\packages\ServiceStack.Text.4.5.12\lib\net45\ServiceStack.Text.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -81,7 +82,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="myRedis\RedisHelper.cs" />
+    <Compile Include="myRedis_01\RedisHelper.cs" />
+    <Compile Include="myRedis_02\DoRedisHash .cs" />
+    <Compile Include="myRedis_02\DoRedisList.cs" />
+    <Compile Include="myRedis_02\DoRedisSet.cs" />
+    <Compile Include="myRedis_02\DoRedisString .cs" />
+    <Compile Include="myRedis_02\DoRedisZSet.cs" />
+    <Compile Include="myRedis_02\RedisBase .cs" />
+    <Compile Include="myRedis_02\RedisConfig.cs" />
+    <Compile Include="myRedis_02\RedisManager.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -90,7 +99,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="1.ico" />
+    <Content Include="sgin.ico" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">

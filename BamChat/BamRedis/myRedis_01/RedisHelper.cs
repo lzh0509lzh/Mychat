@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using ServiceStack.Redis;
 
-namespace BamChat.myRedis
+namespace BamRedis
 {
     public class RedisHelper : IDisposable
     {

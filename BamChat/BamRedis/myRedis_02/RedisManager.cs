@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using ServiceStack.Redis;
 
-namespace BamChat.myRedis
+namespace BamRedis
 {
     /// <summary>
     /// 配置Redis链接

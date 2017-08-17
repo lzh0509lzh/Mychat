@@ -2,15 +2,6 @@ C:\Myproject\BamChat\BamChat\bin\Debug\BamChat.dll.config
 C:\Myproject\BamChat\BamChat\bin\Debug\BamChat.dll
 C:\Myproject\BamChat\BamChat\bin\Debug\BamChat.pdb
 C:\Myproject\BamChat\BamChat\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
-C:\Myproject\BamChat\BamChat\bin\Debug\ServiceStack.Common.dll
-C:\Myproject\BamChat\BamChat\bin\Debug\ServiceStack.Interfaces.dll
-C:\Myproject\BamChat\BamChat\bin\Debug\ServiceStack.Redis.dll
-C:\Myproject\BamChat\BamChat\bin\Debug\ServiceStack.Text.dll
-C:\Myproject\BamChat\BamChat\bin\Debug\ServiceStack.Common.xml
-C:\Myproject\BamChat\BamChat\bin\Debug\ServiceStack.Interfaces.xml
-C:\Myproject\BamChat\BamChat\bin\Debug\ServiceStack.Redis.xml
-C:\Myproject\BamChat\BamChat\bin\Debug\ServiceStack.Text.xml
 C:\Myproject\BamChat\BamChat\bin\Debug\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
-C:\Myproject\BamChat\BamChat\obj\Debug\BamChat.csprojResolveAssemblyReference.cache
 C:\Myproject\BamChat\BamChat\obj\Debug\BamChat.dll
 C:\Myproject\BamChat\BamChat\obj\Debug\BamChat.pdb

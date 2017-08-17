@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace BamChat.myRedis
+namespace BamRedis
 {
     /// <summary>
     /// .Net操作Redis数据类型Set

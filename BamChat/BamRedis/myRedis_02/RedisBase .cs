@@ -1,7 +1,7 @@
 ﻿using System;
 using ServiceStack.Redis;
 
-namespace BamChat.myRedis
+namespace BamRedis
 {
     /// <summary>
     /// RedisBase类，是redis操作的基类，继承自IDisposable接口，主要用于释放内存
