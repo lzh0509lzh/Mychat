@@ -11,3 +11,4 @@ C:\Myproject\BamChat\BamRedis\bin\Debug\ServiceStack.Redis.xml
 C:\Myproject\BamChat\BamRedis\bin\Debug\ServiceStack.Text.xml
 C:\Myproject\BamChat\BamRedis\obj\Debug\BamRedis.exe
 C:\Myproject\BamChat\BamRedis\obj\Debug\BamRedis.pdb
+C:\Myproject\BamChat\BamRedis\obj\Debug\BamRedis.csprojResolveAssemblyReference.cache

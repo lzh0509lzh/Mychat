@@ -1,0 +1,5 @@
+C:\Myproject\Serverview\func\bin\Debug\func.dll
+C:\Myproject\Serverview\func\bin\Debug\func.pdb
+C:\Myproject\Serverview\func\obj\Debug\func.csprojResolveAssemblyReference.cache
+C:\Myproject\Serverview\func\obj\Debug\func.dll
+C:\Myproject\Serverview\func\obj\Debug\func.pdb

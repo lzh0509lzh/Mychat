@@ -1,0 +1,16 @@
+C:\Myproject\MyWPF\MyWPF\bin\Debug\MyWPF.exe.config
+C:\Myproject\MyWPF\MyWPF\bin\Debug\MyWPF.exe
+C:\Myproject\MyWPF\MyWPF\bin\Debug\MyWPF.pdb
+C:\Myproject\MyWPF\MyWPF\obj\Debug\MainWindow.g.cs
+C:\Myproject\MyWPF\MyWPF\obj\Debug\App.g.cs
+C:\Myproject\MyWPF\MyWPF\obj\Debug\MyWPF_MarkupCompile.cache
+C:\Myproject\MyWPF\MyWPF\obj\Debug\MyWPF_MarkupCompile.lref
+C:\Myproject\MyWPF\MyWPF\obj\Debug\MainWindow.baml
+C:\Myproject\MyWPF\MyWPF\obj\Debug\MyWPF.g.resources
+C:\Myproject\MyWPF\MyWPF\obj\Debug\MyWPF.Properties.Resources.resources
+C:\Myproject\MyWPF\MyWPF\obj\Debug\MyWPF.csproj.GenerateResource.Cache
+C:\Myproject\MyWPF\MyWPF\obj\Debug\MyWPF.exe
+C:\Myproject\MyWPF\MyWPF\obj\Debug\MyWPF.pdb
+C:\Myproject\MyWPF\MyWPF\obj\Debug\Window1.g.cs
+C:\Myproject\MyWPF\MyWPF\obj\Debug\Window1.baml
+C:\Myproject\MyWPF\MyWPF\obj\Debug\MyWPF.csprojResolveAssemblyReference.cache

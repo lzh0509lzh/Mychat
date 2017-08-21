@@ -1,0 +1,8 @@
+C:\Myproject\BamChat\BamChat\bin\Debug\BamChat.dll.config
+C:\Myproject\BamChat\BamChat\bin\Debug\BamChat.dll
+C:\Myproject\BamChat\BamChat\bin\Debug\BamChat.pdb
+C:\Myproject\BamChat\BamChat\bin\Debug\zh-Hans\Microsoft.QualityTools.Testing.Fakes.resources.dll
+C:\Myproject\BamChat\BamChat\obj\Debug\BamChat.dll
+C:\Myproject\BamChat\BamChat\obj\Debug\BamChat.pdb
+C:\Myproject\BamChat\BamChat\bin\Debug\Microsoft.QualityTools.Testing.Fakes.dll
+C:\Myproject\BamChat\BamChat\bin\Debug\MySql.Data.dll

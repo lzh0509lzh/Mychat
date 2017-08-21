@@ -1,0 +1,8 @@
+C:\Myproject\Serverview\View\bin\Debug\View.exe.config
+C:\Myproject\Serverview\View\bin\Debug\View.exe
+C:\Myproject\Serverview\View\bin\Debug\View.pdb
+C:\Myproject\Serverview\View\bin\Debug\func.dll
+C:\Myproject\Serverview\View\bin\Debug\func.pdb
+C:\Myproject\Serverview\View\obj\Debug\View.csprojResolveAssemblyReference.cache
+C:\Myproject\Serverview\View\obj\Debug\View.exe
+C:\Myproject\Serverview\View\obj\Debug\View.pdb
